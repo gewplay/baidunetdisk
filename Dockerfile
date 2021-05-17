@@ -44,7 +44,7 @@ RUN set -eux; \
 # 安装libnss-wrapper
     apt-get install -y libnss-wrapper gettext; \
 # 安装百度网盘
-    wget -O /tmp/baidudnetdisk.deb http://wppkg.baidupcs.com/issue/netdisk/LinuxGuanjia/3.0.1/baidunetdisk_linux_3.0.1.2.deb; \
+    wget -O /tmp/baidudnetdisk.deb https://issuecdn.baidupcs.com/issue/netdisk/LinuxGuanjia/3.5.0/baidunetdisk_3.5.0_amd64.deb; \
     dpkg -i /tmp/baidudnetdisk.deb; \
     rm -f /tmp/baidudnetdisk.deb; \
 # 设置文件权限
