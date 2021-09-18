@@ -24,7 +24,7 @@ COPY ./scripts $STARTUPDIR
 RUN set -eux; \
     mkdir -p $HOME; \
     apt-get update; \
-    apt-get install -y vim wget net-tools locales bzip2 python-numpy desktop-file-utils; \
+    apt-get install -y vim wget net-tools locales bzip2 python-numpy desktop-file-utils libappindicator3-1; \
     locale-gen en_US.UTF-8; \
 # 安装字体
     apt-get install -y ttf-wqy-zenhei; \
