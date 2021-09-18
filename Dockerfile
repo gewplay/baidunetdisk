@@ -55,7 +55,7 @@ RUN set -eux; \
     apt-get clean -y;
 
 EXPOSE $VNC_PORT $NO_VNC_PORT
-VOLUME ["$CONFIG_VOLUME", "$DOWNLOAD_VOLUME"]
+VOLUME [$CONFIG_VOLUME, $DOWNLOAD_VOLUME]
 WORKDIR $HOME
 ENTRYPOINT ["/dockerstartup/vnc_startup.sh"]
 CMD ["--wait"]
