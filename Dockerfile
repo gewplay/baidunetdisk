@@ -52,7 +52,9 @@ RUN set -eux; \
     find $HOME  -name '*.sh' -o -name '*.desktop' | xargs chmod a+x; \
 # 清理
     apt-get purge -y pm-utils xscreensaver*; \
-    apt-get clean -y;
+    apt-get clean -y; \
+# 设置时区
+    cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime;
 
 EXPOSE $VNC_PORT $NO_VNC_PORT
 VOLUME ["$CONFIG_VOLUME", "$DOWNLOAD_VOLUME"]
