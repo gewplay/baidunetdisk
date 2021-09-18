@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Baidu Netdisk
 Comment=百度网盘
-Exec="/opt/baidunetdisk/baidunetdisk" %U
+Exec=/opt/baidunetdisk/baidunetdisk --no-sandbox %U
 Terminal=false
 Type=Application
 Icon=baidunetdisk
